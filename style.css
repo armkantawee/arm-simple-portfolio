@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+
+:root {
+    --bg-color: #121212;
+    --text-color: #e0e0e0;
+    --accent-color: #bb86fc;
+    --card-border: #333;
+}
+
+body.light-theme {
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --accent-color: #6200ee;
+    --card-border: #cccccc;
+}
+
+body {
+    font-family: 'JetBrains Mono', monospace;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 2rem;
+    line-height: 1.6;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+    text-align: center;
+    padding: 4rem 0;
+    position: relative;
+}
+
+#theme-toggle {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    background: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
+
+h1 { font-size: 3rem; color: var(--accent-color); }
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.project-card {
+    border: 1px solid var(--card-border);
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+#contact {
+    text-align: center;
+    padding: 4rem 0;
+}
+
+a { color: var(--accent-color); text-decoration: none; font-weight: bold; }
+a:hover { text-decoration: underline; }
+
+.project-card a {
+    display: inline-block;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
